@@ -1,0 +1,38 @@
+abstract class vehicle
+{
+    public void hi()
+    {
+        System.out.println("Hi");
+    }
+    abstract public void vehi();
+}
+class car extends vehicle
+{
+    public void hi()
+    {
+        System.out.println("Car1");
+    }
+    public void vehi()
+    {
+        System.out.println("Car");
+    }
+}
+class bike extends vehicle
+{
+ public void vehi()
+    {
+        System.out.println("Bike");
+    }   
+}
+public class MyClass {
+    public static void main(String args[]) {
+        vehicle v=new bike();   
+        vehicle v1=new car();
+        car c=new car();
+        v.hi();
+        v1.vehi();
+        v.vehi();
+        c.hi();
+        //System.out.println("Sum of x+y = " + z);
+    }
+}
