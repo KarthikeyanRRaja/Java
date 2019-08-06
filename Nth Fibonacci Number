@@ -1,0 +1,13 @@
+int a=0,b=1,c,k=0,i;
+        int arr[]=new int[input1+1];
+        arr[k++]=a;
+        arr[k++]=b;
+        for(i=3;i<=input1;i++)
+        {
+            c=a+b;
+            a=b;
+            b=c;
+            arr[k++]=c;
+        }
+        return arr[input1-1];
+    
